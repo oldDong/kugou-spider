@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: kugou-spider
+server:
+  port: 9999
+logging:
+  path: /usr/local/jars/log/${spring.application.name}
