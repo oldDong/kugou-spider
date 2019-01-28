@@ -61,6 +61,7 @@ public class SpiderService {
             String url = topUrl.replace("PAGE", i + "");
             getTitle(url, savePath);
         }
+        logger.info("==========下载结束==========");
         return ResultVo.ok(null);
     }
 
@@ -138,7 +139,7 @@ public class SpiderService {
 
     public static void main(String[] args) throws IOException {
         SpiderService spiderService = new SpiderService();
-        spiderService.download(9, "/Users/dongzj/Downloads/kugou/");
+        spiderService.download(2, "/Users/dongzj/Music/kugou/");
     }
 
 }
